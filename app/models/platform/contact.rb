@@ -17,4 +17,8 @@
 class Platform::Contact < ApplicationRecord
   belongs_to :country
   has_many :logs, dependent: :destroy
+
+  enum status: %i[pending rejected approved banned archived]
+
+  scope :active_contacts, -> { where.not(status: :archived) }
 end

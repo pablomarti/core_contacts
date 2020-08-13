@@ -12,4 +12,6 @@
 #
 class Platform::Contact::Log < ApplicationRecord
   belongs_to :contact
+
+  enum status: %i[achievement complaint performance]
 end

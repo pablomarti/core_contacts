@@ -46,3 +46,4 @@ gem 'fast_jsonapi'
 gem 'pundit'
 gem 'rubocop', require: false
 gem 'strong_migrations'
+gem 'versionist'
