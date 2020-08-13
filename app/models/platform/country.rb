@@ -14,4 +14,5 @@
 #  index_platform_countries_on_code  (code) UNIQUE
 #
 class Platform::Country < ApplicationRecord
+  has_many :contacts, dependent: :nullify
 end
