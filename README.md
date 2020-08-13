@@ -9,4 +9,4 @@ Dependencies:
 - Versionist for handle API version changes
 - Sidekiq for background processing
 - RabbitMQ for message broker
-
+- RSpec for TDD (pending)
