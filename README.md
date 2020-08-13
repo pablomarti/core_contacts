@@ -1,24 +1,12 @@
-# README
+# Core Contacts [WIP]
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+API that handles lists of contacts and dispatches notifications to be used by multiple services.
 
-Things you may want to cover:
+Dependencies:
+- Doorkeeper as OAuth2 provider
+- Fast JSON API for JSON API
+- Pundit for policies and control access
+- Versionist for handle API version changes
+- Sidekiq for background processing
+- RabbitMQ for message broker
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
