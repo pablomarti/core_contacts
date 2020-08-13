@@ -1,0 +1,45 @@
+AllCops:
+  TargetRubyVersion: 2.7.1
+  NewCops: enable
+  Exclude:
+    - db/**/*
+    - lib/**/*
+    - script/**/*
+    - vendor/**/*
+    - bin/**/*
+    - node_modules/**/*
+Style/Documentation:
+  Enabled: false
+Lint/Debugger:
+  AutoCorrect: false
+Lint/ReturnInVoidContext:
+  Enabled: false
+Layout/LineLength:
+  Max: 120
+Metrics/BlockLength:
+  Exclude:
+    - config/**/*
+    - spec/**/*
+    - app/admin/**/*
+    - app/views/**/*
+Naming:
+  Exclude:
+    - Guardfile
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/FormatStringToken:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+Style/RescueStandardError:
+  Enabled: false
+Style/MixinUsage:
+  Enabled: false
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
