@@ -47,3 +47,4 @@ gem 'pundit'
 gem 'rubocop', require: false
 gem 'strong_migrations'
 gem 'versionist'
+gem 'ruby-kafka'

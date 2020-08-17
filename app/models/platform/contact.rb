@@ -20,5 +20,13 @@ class Platform::Contact < ApplicationRecord
 
   enum status: %i[pending rejected approved banned archived]
 
+  after_create :send_notification
+
   scope :active_contacts, -> { where.not(status: :archived) }
+
+  protected
+
+  def send_notification
+    SendNotificationService.new(self, 'new_contact').call
+  end
 end
